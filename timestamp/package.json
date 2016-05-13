@@ -1,0 +1,27 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.0.1",
+  "description": "myprtfl's Backend Projects",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chrono-node": "^1.2.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myprtfl/api"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "chrono-node"
+  ],
+  "license": "MIT"
+}
