@@ -1,2 +1,2 @@
-var express = require('express');
-var express = require('chrono-node');
+require('express');
+require('chrono-node');
