@@ -15,11 +15,11 @@ app.get('/api/1/timestamp/:time', function(request, response) {
       result.natural = null;
     }else{
       result.unix= natureDate.getTime()/1000;
-      result.natural = natureDate.toDateString();
+      result.natural = natureDate.toLocaleDateString('en-US', { day : 'numeric', month : 'long', year : 'numeric'});
     }
   }else{
       result.unix = Number(request.params.time);
-      result.natural = new Date(Number(request.params.time*1000)).toDateString()
+      result.natural = new Date(Number(request.params.time*1000)).toLocaleDateString('en-US', { day : 'numeric', month : 'long', year : 'numeric'});
   }
 
   response.setHeader('Content-Type', 'application/json');
