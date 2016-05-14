@@ -1,1 +1,2 @@
-var assert = require('express').assert;
+var express = require('express');
+var express = require('chrono-node');
