@@ -2,4 +2,4 @@
 
 [![Build Status](https://travis-ci.org/myprtfl/api.svg?branch=master)](https://travis-ci.org/myprtfl/api)
 
-[Timestamp Microservice](https://myprtfl.herokuapp.com/api/1/timestamp/)
+[Timestamp Microservice](https://myprtfl.herokuapp.com/api/2/timestamp/)
