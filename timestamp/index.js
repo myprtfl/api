@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 8080));
 
 app.use('/api/', express.static(__dirname + '/static/api/'));
 
-app.get('/api/:version/timestamp/:time', function(request, response) {
+app.get('/api/timestamp/v:version/:time', function(request, response) {
   if(request.params.version !='1' && request.params.version != '2'){
     response.status(404);
     response.send('Invalid version');
