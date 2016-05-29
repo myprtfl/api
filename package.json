@@ -1,14 +1,14 @@
 {
   "name": "myprtfl-backend-api",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "myprtfl's Backend Projects",
   "engines": {
     "node": "5.9.1"
   },
-  "main": "timestamp/index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node timestamp/index.js",
-    "test": "node timestamp/test.js"
+    "start": "node server.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "chrono-node": "^1.2.1",

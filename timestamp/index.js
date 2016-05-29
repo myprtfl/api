@@ -1,12 +1,10 @@
 var chrono = require("chrono-node");
 var express = require('express');
-var app = express();
+var router = express.Router();
 
-app.set('port', (process.env.PORT || 8080));
+router.use('/', express.static(__dirname + '/static/'));
 
-app.use('/api/', express.static(__dirname + '/static/api/'));
-
-app.get('/api/timestamp/v:version/:time', function(request, response) {
+router.get('/v:version/:time', function(request, response) {
   if(request.params.version !='1' && request.params.version != '2'){
     response.status(404);
     response.send('Invalid version');
@@ -39,6 +37,4 @@ app.get('/api/timestamp/v:version/:time', function(request, response) {
   response.json(result);
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+module.exports = router;
