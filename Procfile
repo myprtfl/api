@@ -1,1 +1,1 @@
-web: node timestamp/index.js
+web: node server.js
