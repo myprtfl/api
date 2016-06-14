@@ -9,6 +9,9 @@ app.use('/api/timestamp', require('./timestamp'));
 
 app.use('/api/whoami', require('./whoami'));
 
+app.use('/api/urlshortener', require('./urlshortener'));
+
 app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'), app._router.stack);
+//   console.log('Node app is running on port', app.get('port'), app._router.stack);
+  console.log('Node app is running on port', app.get('port'));
 });

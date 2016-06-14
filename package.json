@@ -11,8 +11,12 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "assert": "^1.4.1",
     "chrono-node": "^1.2.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "mongodb": "^2.1.21",
+    "pg": "4.5.5",
+    "valid-url": "^1.0.9"
   },
   "repository": {
     "type": "git",
