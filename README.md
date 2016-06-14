@@ -5,3 +5,5 @@
 [Timestamp Microservice](https://myprtfl.herokuapp.com/api/timestamp/v2/)
 
 [Request Header Parser Microservice](https://myprtfl.herokuapp.com/api/whoami/v1/)
+
+[URL Shortener Microservice](https://myprtfl.herokuapp.com/api/urlshortener/v1)
