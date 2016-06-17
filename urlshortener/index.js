@@ -78,7 +78,7 @@ function getIdByUrl(url, getIdCallback){
 
 router.use('/', express.static(__dirname + '/static/'));
 
-router.get('/v1/:id', function(request, response) {
+router.get(['/v1/:id', '/:id'], function(request, response) {
   var result = {};
   var id = +request.params.id;
   result.short_url = urlbase + request.params.id;
