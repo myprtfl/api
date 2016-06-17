@@ -4,5 +4,10 @@
   "repository": "https://github.com/myprtfl/api",
   "logo": "https://avatars1.githubusercontent.com/u/17084987",
   "keywords": ["node", "express", "static"],
-  "image": "heroku/nodejs"
+  "image": "heroku/nodejs",
+  "env": {
+    "MONGOLAB_URI": {
+        "required": true
+    }
+  }
 }
