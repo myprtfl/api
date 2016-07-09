@@ -11,6 +11,8 @@ app.use('/api/whoami', require(__dirname + '/whoami/index.js'));
 
 app.use('/api/urlshortener', require(__dirname + '/urlshortener/index.js'));
 
+app.use('/api/imagesearch', require(__dirname + '/imagesearch/index.js'));
+
 app.listen(app.get('port'), function() {
 //   console.log('Node app is running on port', app.get('port'), app._router.stack);
   console.log('Node app is running on port', app.get('port'));
