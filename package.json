@@ -18,7 +18,6 @@
     "fifo-array": "^0.1.2",
     "mongodb": "^2.1.21",
     "multer": "^1.1.0",
-    "multipart": "^0.1.5",
     "pg": "4.5.5",
     "valid-url": "^1.0.9"
   },
