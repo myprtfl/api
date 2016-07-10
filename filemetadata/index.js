@@ -18,6 +18,7 @@ router.get('/v1/upload', function(request, response) {
 });
 
 router.post('/v1/size', function(request, response) {
+  var result = {};
   upload(request, response, function (err) {
     if (err) {
       // An error occurred when uploading
@@ -28,8 +29,11 @@ router.post('/v1/size', function(request, response) {
     // Everything went fine
     if (request.file) {
   	  console.log(util.inspect(request.file));
-  		response.end(request.file.size.toString());
+  		result.size = request.file.size; 
+      response.setHeader('Content-Type', 'application/json');
+  		response.json(result);
   	}else{
+      response.status(404);
   	  response.end('No file received');
   	}
   });
